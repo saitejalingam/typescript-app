@@ -1,0 +1,37 @@
+{
+  "name": "typescript-app",
+  "version": "1.0.0",
+  "description": "TypeScript App and Gulp QuickStart",
+  "scripts": {
+    "clean": "gulp clean",
+    "compile": "gulp compile",
+    "build": "gulp build",
+    "start": "concurrent --kill-others \"gulp watch\" \"lite-server\"",
+    "postinstall": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egen/typescript-app.git"
+  },
+  "author": "psalitra@egen.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egen/typescript-app/issues"
+  },
+  "dependencies": {
+    "systemjs": "0.19.27",
+    "es6-shim": "^0.35.0"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.3",
+    "gulp-typescript": "^2.12.0",
+    "lite-server": "^2.2.0",
+    "tslint": "^3.5.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}
